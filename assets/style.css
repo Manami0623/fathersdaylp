@@ -1,0 +1,256 @@
+body{
+    background-color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.fathersheader {
+    margin:0 auto;
+    width:100%;
+}
+
+.fathersheader img {
+    margin:0 auto;
+    width:100%;
+}
+
+.main-wrap {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+   
+}
+
+ul {
+    list-style: none;
+}
+
+.top_categories {
+    margin:200px 30px 30px 30px;
+    display:flex;
+    border:3px solid #000;
+    
+}
+
+.box {
+    display:flex;
+    flex-direction: column-reverse;
+    box-sizing: border-box; 
+    padding: 5% 10px;
+}
+
+.text {
+    width: 80%;
+    text-align: center;
+    padding-top:30px;
+}
+h1 {
+    font-size:3em;
+    margin-top:10px;
+}
+
+#item {
+    font-size:1em;
+}
+
+.pic {
+  min-height: 0%;
+}
+
+.pic img {
+    max-width:80%;
+    height:auto;
+}
+
+.line-up {
+    margin:250px 0;
+    text-align: center;
+}
+
+.line {
+    color: #444;
+	font-size: 5em;
+	display: flex;
+	align-items: center;
+}
+
+.line:before,.line:after {
+    content: "";
+	flex-grow: 1;
+	height: 2px;
+	background: #444;
+	display: block;
+}
+
+.line span {
+    padding:0 20px;
+}
+
+#lineup {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 5em;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20%;
+}
+
+
+.main-brand {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#brandname_s {
+    font-size:1.5em;
+    text-align: center;
+    font-family: futura-pt, sans-serif;
+    margin-bottom: 10px;
+}
+
+#loisvuitton {
+    font-family: futura-pt, sans-serif;
+    font-size:5.5em;
+    text-align: center;
+}
+
+.brandpic {
+    position:relative;
+    margin-top:200px;
+    left:10%;   
+}
+
+.ractangle{
+    position:absolute;
+    margin-top:150px;
+    left:10%;
+}
+
+.description {
+    margin-left:20%;
+    margin-top:10%;
+}
+
+ #dis {
+    font-family: 'Noto Serif';
+    font-size:2.5em;
+    text-align: center;
+    line-height: 2em;
+    margin-top:40%; 
+}
+
+.category_letter {
+    margin-top:10%;
+}
+
+.category {
+    font-size: 5em;
+    text-align: center;
+    margin-bottom:10%;
+}
+
+.three_item {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.item_name {
+    text-align: center;
+    font-size:2em;
+    font-family: 'Noto Serif';
+    margin-top:10%;
+} 
+
+.category_letter {
+    margin-bottom: 20%;
+}
+
+#gucci {
+    font-family:'Optima';
+    font-size:8.5em;
+    text-align: center;
+    font-weight:lighter;
+}
+
+#helmes {
+    font-family: 'Cabin', sans-serif;
+    font-size:8.5em;
+    text-align: center;
+    font-weight:lighter;
+}
+
+.wrapping {
+    text-align: center;
+    font-size:5.5em;
+    margin-top: .3em;
+}
+
+.wrapping {
+    color: #444;
+	font-size: 5em;
+	display: flex;
+    align-items: center;
+    margin-bottom:50px;
+}
+
+.wrapping span {
+    padding:0 20px;
+}
+
+.wrapping:before,.wrapping:after {
+    content: "";
+	flex-grow: 1;
+	height: 2px;
+	background: #444;
+	display: block;
+}
+
+.giftdis {
+    margin:10% 0;
+    font-size:2.5em;
+    text-align: center;
+}
+
+.giftpic {
+   margin-top:5%;
+   display:flex;
+   justify-content: center;
+}
+
+.giftpic img {
+    border-radius: 30px;
+    width:60%;
+}
+
+.more {
+    margin:10% 0;
+    display: flex;
+    justify-content: center;
+}  
+
+.details {
+    border: 2px solid #000000;
+    border-radius: 30px;
+    padding:40px 100px;
+    font-size:3em;
+    line-height: 55px;
+    transition: all 0.3s ease 0s;
+}
+
+.details:hover{
+    background-color: #000;
+    color:#fff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.1875em);
+}
+
+.ractangle,.brandpic,.top_categories,.giftpic {
+    opacity : 0;
+    transform: translateY(50px);
+    transition: all 2s;
+}
+
