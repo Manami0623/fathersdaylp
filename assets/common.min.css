@@ -4,14 +4,23 @@
         overflow:hidden;
     }
     
-    .fathersheader,.main-brand
-    {
-     
+    .fathersheader  {
+        width: 100%;
+        padding-top: calc(350 / 550 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
+        background-image: url(./img/fathersdaytopsmp.png);
+        background-repeat: no-repeat;
+        background-size: cover
+        height:0;
     }
 
-    .main-wrap {
-      
+    .fathersbanner_s {
+        margin:0 auto;
     }
+
+    .fathersbanner_s img {
+        margin:0 auto; 
+    }
+
 
     .top_categories {
         display:flex;
@@ -134,13 +143,13 @@
         overflow:hidden;
     }
     
-    .fathersheader,.main-brand
-    {
-     
-    }
-
-    .main-wrap {
-      
+    .fathersheader  {
+        width: 100%;
+        padding-top: calc(1500 / 883 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
+        background-image: url(./img/fathersdaytopsmp.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:0;
     }
 
     .top_categories {
@@ -244,7 +253,7 @@
     }
 
     .wrapping {
-        margin-bottom:30%;
+        margin-bottom:20%;
     }
 
     .giftdis {
