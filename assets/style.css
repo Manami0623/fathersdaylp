@@ -290,3 +290,13 @@ h2 {
 .details_a hover {
     color:rgb(207, 189, 189);
 }
+
+.description p {
+    -webkit-transition: all 3s;
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+  .description p.move {
+    -webkit-transform: translate(-20px, 0);
+    opacity: 0;
+  }
