@@ -1,148 +1,33 @@
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1024px){
+    .main-wrap {
+        width: calc(100% - 50px);
+        margin: 0 auto;
+    }
+
     .html {
         font-size:;
         overflow:hidden;
     }
     
-    .fathersheader,.main-brand
-    {
-     
+    .fathersheader  {
+        width: 100%;
+        padding-top: calc(1500 / 883 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
+        background-image: url(./img/fathersdaytopsmp.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:0;
+        position:reative;
     }
 
-    .main-wrap {
-      
-    }
-
-    .top_categories {
-        display:flex;
-        flex-direction: column;
-        height: auto;
-        background: #fff;
-        position: relative;
+    .logo {
+        position:absolute;
+        left:0;
         z-index: 10;
-        overflow: hidden;
-        margin: 100px 30px 30px 30px;
-        border:1px solid #000;
-    
-    }
-
-    .pic {
-        display:none;
-    }
-
-    .box:not(:last-child) {
-        border-bottom:1px solid #000;
-    }
-
-    .text {
-        text-align: center;
-        width:auto;
-        padding:10px;
-    }
-
-    h1{
-        font-size:2rem;
-    }
-
-    .line-up {
-        margin: 30% 0;
-        text-align: center;
-        font-size: .5rem;
-    }
-
-    .main-brand,.brandname {
-        display: flex;
-        flex-direction: column;
-        width:100%;
-    }
-
-    .main-brand:not(:first-child) {
-        margin-top:40%;
-    }
-
-    #loisvutton {
-        font-size:1.5rem;
-    }
-
-    .ractangle {
+        top:3%;
+        left:3%;
         width:50%;
     }
 
-    .brandpic {
-        width:80%;
-        margin-top: 100px;
-    }
-
-    .description {
-        margin-top:10%;
-        margin-left:0%;
-    }
-
-    #dis {
-        margin-top:5%;
-    }
-
-    .category_letter {
-        margin-top:30%;
-    }
-
-    .category {
-        margin-bottom:20%;
-    }
-
-    ul.three_item {
-        border: 1px solid black;
-        display:flex;
-        flex-direction: column;
-        margin: 100px 30px 30px 30px;
-    }
-
-    .items:not(:last-child) {
-        border-bottom: 1px solid black;
-    }
-
-    .three_item img {
-        display:none;
-    }
-
-    .item_name {
-        margin:8% 0;
-    }
-
-    .wrapping {
-        font-size:3em;
-    }
-
-    .wrapping {
-        margin-bottom:30%;
-    }
-
-    .giftdis {
-        font-size:1.5em;
-    }
-
-    .details {
-        padding:10px 50px;
-        font-size:1.5em;
-    }
-
-}
-
-@media screen and (max-width: 1024px){
-    .html {
-        font-size:;
-        overflow:hidden;
-    }
-    
-    .fathersheader,.main-brand
-    {
-     
-    }
-
-    .main-wrap {
-      
-    }
-
     .top_categories {
         display:flex;
         flex-direction: column;
@@ -184,6 +69,10 @@
         display: flex;
         flex-direction: column;
         width:100%;
+    }
+
+    .brandname {
+        position:relative;
     }
 
     .main-brand:not(:first-child) {
@@ -195,12 +84,15 @@
     }
 
     .ractangle {
-        width:50%;
+        width:80%;
+        position: absolute;
+        margin-top: 60%;
+        left: -10%;
     }
 
     .brandpic {
-        width:80%;
         margin-top: 100px;
+        width:100%;
     }
 
     .description {
@@ -209,7 +101,12 @@
     }
 
     #dis {
-        margin-top:5%;
+        font-family: 'Noto Serif';
+        font-size: 2em;
+        text-align: center;
+        line-height: 2em;
+        right: 0;
+        margin-top:10%;
     }
 
     .category_letter {
@@ -227,6 +124,11 @@
         margin: 100px 30px 30px 30px;
     }
 
+    .items {
+        margin: 0;
+        padding:5%;
+    }
+
     .items:not(:last-child) {
         border-bottom: 1px solid black;
     }
@@ -236,7 +138,7 @@
     }
 
     .item_name {
-        margin:8% 0;
+        /* margin:8% 0; */
     }
 
     .wrapping {
@@ -244,17 +146,22 @@
     }
 
     .wrapping {
-        margin-bottom:30%;
+        margin-bottom:20%;
+    }
+
+    .giftpic img {
+        border-radius: 30px;
+        width:350px;
+        height:300px;
+        
     }
 
     .giftdis {
-        font-size:1.5em;
+        font-size:1.3em;
     }
 
     .details {
-        padding:10px 50px;
-        font-size:1.5em;
-    }
-
-    
+        padding: 10px 80px;
+        font-size: 20px;
+    }    
 }
