@@ -1,6 +1,6 @@
 @media screen and (max-width: 1024px){
     .main-wrap {
-        width: calc(100% - 20px);
+        width: calc(100% - 50px);
         margin: 0 auto;
     }
 
@@ -16,6 +16,16 @@
         background-repeat: no-repeat;
         background-size: cover;
         height:0;
+        position:reative;
+    }
+
+    .logo {
+        position:absolute;
+        left:0;
+        z-index: 10;
+        top:3%;
+        left:3%;
+        width:50%;
     }
 
     .top_categories {
@@ -116,6 +126,7 @@
 
     .items {
         margin: 0;
+        padding:5%;
     }
 
     .items:not(:last-child) {
@@ -127,7 +138,7 @@
     }
 
     .item_name {
-        margin:8% 0;
+        /* margin:8% 0; */
     }
 
     .wrapping {
@@ -139,17 +150,11 @@
     }
 
     .giftdis {
-        font-size:1.5em;
+        font-size:1.3em;
     }
 
     .details {
         padding: 10px 80px;
         font-size: 20px;
     }    
-}
-
-@media screen and (min-width: 1024px){
-    iframe {
-        display:none;
-    }
 }
