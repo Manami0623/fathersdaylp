@@ -143,7 +143,7 @@ h2 {
 
 #loisvuitton {
     font-family: futura-pt, sans-serif;
-    font-size:5.5em;  
+    font-size:4.5em;  
     text-align:center;
 }
 
@@ -191,6 +191,14 @@ h2 {
     font-family: 'Noto Serif';
     /* margin-top:10%; */
 } 
+
+.items img {
+    padding-bottom:20%;
+}
+
+.items :hover {
+    opacity:0.5;
+}
 
 .category_letter {
     margin-bottom: 20%;
