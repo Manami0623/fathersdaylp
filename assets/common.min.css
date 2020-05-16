@@ -10,9 +10,9 @@
     }
     
     .fathersheader  {
-        width: 100%;
-        padding-top: calc(1500 / 883 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
-        background-image: url(./img/fathersdaytopsmp.png);
+        width: auto;
+        padding-top: calc(1500 / 1078 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
+        background-image: url(./img/fathersdaylp_smp_resize650.png);
         background-repeat: no-repeat;
         background-size: cover;
         height:0;
@@ -77,10 +77,6 @@
 
     .main-brand:not(:first-child) {
         margin-top:40%;
-    }
-
-    #loisvutton {
-        font-size:.5rem;
     }
 
     .ractangle {
