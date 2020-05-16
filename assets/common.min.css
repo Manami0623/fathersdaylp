@@ -96,15 +96,6 @@
         margin-left:0%;
     }
 
-    #dis {
-        font-family: 'Noto Serif';
-        font-size: 2em;
-        text-align: center;
-        line-height: 2em;
-        right: 0;
-        margin-top:10%;
-    }
-
     .category_letter {
         margin-top:30%;
     }
@@ -155,6 +146,7 @@
     .giftdis {
         font-size:1.3em;
     }
+
 
     .details {
         padding: 10px 80px;
