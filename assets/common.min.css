@@ -100,20 +100,20 @@
     }
 
     #dis {
-        text-align: center;
+        text-align: left;
         font-size: 3em;
         margin-top:5%;
     }
 
     #dis_s {
-        text-align: center;
+        text-align: left;
         font-size: 2em;
         margin-top:5%;
         line-height: 2em;
     }
 
 #loisvuitton{
-    font-size:7.5em;
+    font-size:4.5em;
 }
 
 #gucci {
@@ -159,7 +159,7 @@
     .all{
         margin-top:20%;
         border-radius: unset;
-        width:90%;
+        width:82%;
         display: flex;
         justify-content: center;
     }
