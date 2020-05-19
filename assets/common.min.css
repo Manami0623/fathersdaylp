@@ -65,6 +65,16 @@
         font-size: .5rem;
     }
 
+    .line:before,.line:after {
+        content: "";
+        flex-grow: 1;
+        height: 2px;
+        background: #444;
+        display: block;
+        position:relative;
+        top:15px;
+    }
+
     .main-brand,.brandname {
         display: flex;
         flex-direction: column;
@@ -79,22 +89,40 @@
         margin-top:40%;
     }
 
-    .ractangle {
-        width:80%;
-        position: absolute;
-        margin-top: 60%;
-        left: -10%;
-    }
-
     .brandpic {
         margin-top: 100px;
         width:100%;
     }
 
     .description {
-        margin-top:10%;
+        margin-top:8%;
         margin-left:0%;
     }
+
+    #dis {
+        text-align: left;
+        font-size: 3em;
+        margin-top:5%;
+    }
+
+    #dis_s {
+        text-align: left;
+        font-size: 2em;
+        margin-top:5%;
+        line-height: 2em;
+    }
+
+#loisvuitton{
+    font-size:4.5em;
+}
+
+#gucci {
+    font-size:12.5em;
+}
+
+#helmes {
+    font-size:10em;
+}
 
     .category_letter {
         margin-top:30%;
@@ -109,6 +137,7 @@
         display:flex;
         flex-direction: column;
         margin: 100px 30px 30px 30px;
+        
     }
 
     .items {
@@ -116,9 +145,19 @@
         padding:5%;
     }
 
+    .items:last-child {
+        display:block;
+    }
+
+
     .items:not(:last-child) {
         border-bottom: 1px solid black;
     }
+
+    .all {
+        display:none;
+    }
+
 
     .three_item img {
         display:none;
