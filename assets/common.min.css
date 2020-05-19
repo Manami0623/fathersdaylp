@@ -137,6 +137,7 @@
         display:flex;
         flex-direction: column;
         margin: 100px 30px 30px 30px;
+        
     }
 
     .items {
@@ -144,9 +145,19 @@
         padding:5%;
     }
 
+    .items:last-child {
+        display:block;
+    }
+
+
     .items:not(:last-child) {
         border-bottom: 1px solid black;
     }
+
+    .all {
+        display:none;
+    }
+
 
     .three_item img {
         display:none;
@@ -154,14 +165,6 @@
 
     .item_name {
         /* margin:8% 0; */
-    }
-
-    .all{
-        margin-top:20%;
-        border-radius: unset;
-        width:82%;
-        display: flex;
-        justify-content: center;
     }
 
     .wrapping {
