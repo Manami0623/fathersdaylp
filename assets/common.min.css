@@ -65,6 +65,16 @@
         font-size: .5rem;
     }
 
+    .line:before,.line:after {
+        content: "";
+        flex-grow: 1;
+        height: 2px;
+        background: #444;
+        display: block;
+        position:relative;
+        top:15px;
+    }
+
     .main-brand,.brandname {
         display: flex;
         flex-direction: column;
@@ -79,21 +89,27 @@
         margin-top:40%;
     }
 
-    .ractangle {
-        width:80%;
-        position: absolute;
-        margin-top: 60%;
-        left: -10%;
-    }
-
     .brandpic {
         margin-top: 100px;
         width:100%;
     }
 
     .description {
-        margin-top:10%;
+        margin-top:8%;
         margin-left:0%;
+    }
+
+    #dis {
+        text-align: center;
+        font-size: 3em;
+        margin-top:5%;
+    }
+
+    #dis_s {
+        text-align: center;
+        font-size: 2em;
+        margin-top:5%;
+        line-height: 2em;
     }
 
     .category_letter {
