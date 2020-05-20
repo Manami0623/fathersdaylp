@@ -38,7 +38,6 @@ body{
 .main-wrap {
     width: calc(100% - 120px);
     margin: 0 auto;
-   
 }
 
 ul {
@@ -325,7 +324,16 @@ h2 {
     opacity: 0;
   }
 
-  a {
+a {
       text-decoration: none;
       color:#000;
   }
+
+/* iframePC版フッター表示 */
+#pc_footerframe {
+display:block;
+}
+/* iframesmp版フッター表示 */
+#smp_footerframe {
+    display:none;
+}

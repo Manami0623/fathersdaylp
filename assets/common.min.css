@@ -190,5 +190,14 @@
     .details {
         padding: 10px 80px;
         font-size: 20px;
-    }    
+    }
+/* iframePC版フッター非表示 */
+    #pc_footerframe {
+        display:none;
+    }
+/* iframesmp版フッター表示 */
+    #smp_footerframe {
+        display:block;
+    }
+  
 }
