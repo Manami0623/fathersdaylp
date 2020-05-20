@@ -1,3 +1,15 @@
+$(function() {
+    $('.navToggle').click(function() {
+        $(this).toggleClass('active');
+ 
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
+});
+
 $(function(){
     $(window).scroll(function (){
         $('.top_categories').each(function(){
@@ -84,3 +96,4 @@ $(function(){
     });
   });
   
+

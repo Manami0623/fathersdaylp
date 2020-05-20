@@ -19,6 +19,19 @@
         position:reative;
     }
 
+    nav.globalMenuSp {
+        width:100%;
+        z-index:100;
+       
+    }
+
+    .navToggle {
+        z-index:500;
+        width: 80px;
+        height: 100px;
+    }
+    
+
     .logo {
         position:absolute;
         left:0;
