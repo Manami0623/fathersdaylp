@@ -4,7 +4,7 @@ body{
     
 }
 
-.fathersheader {
+ .fathersheader {
     margin:0 auto;
     width:auto;
     height:0;
@@ -12,8 +12,7 @@ body{
     background-image: url(./img/fathersday.png);
     background-repeat: no-repeat;
     background-size: cover
-
-}
+} 
 
 .fathersheader {
     margin:0 auto;
@@ -22,10 +21,113 @@ body{
     position:reative;
 }
 
+/* ハンバーガーメニュー */
+nav.globalMenuSp {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  transform: translateX(100%);
+  transition: all 0.6s;
+  width: 30%;
+  height:100%;
+}
+
+nav.globalMenuSp ul {
+  background: rgb(255, 255, 255);
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height:100%;
+  
+}
+
+nav.globalMenuSp ul li {
+  font-size: 2.5em;
+  list-style-type: none;
+  width: 100%;
+  padding:15% 0;
+  border: 1px dotted #000;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  color: #000;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  transform: translateY(0%);
+}
+
+.navToggle {
+  display: block;
+  position: fixed;    
+  right: 13px;
+  top: 12px;
+  width: 80px;
+  height: 90px;
+  cursor: pointer;
+  z-index: 3;
+  background: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.navToggle span {
+display: block;
+position: absolute;    
+width: 50px;
+border-bottom: solid 5px #fff;
+-webkit-transition: .35s ease-in-out;
+-moz-transition: .35s ease-in-out;
+transition: .35s ease-in-out;
+left: 15px;
+}
+
+.navToggle span:nth-child(1) {
+top: 18px;
+}
+
+.navToggle span:nth-child(2) {
+top: 36px;
+}
+
+.navToggle span:nth-child(3) {
+top: 54px;
+}
+
+.navToggle span:nth-child(4) {
+border: none;
+color: #fff;
+font-size: 20px;
+font-weight: bold;
+top: 63px;
+}
+.navToggle.active span:nth-child(1) {
+top: 36px;
+left: 15px;
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+
+.navToggle.active span:nth-child(2),
+.navToggle.active span:nth-child(3) {
+top: 36px;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+/* ここまで */
+
 .logo {
     position:absolute;
     left:0;
-    z-index: 10;
+    z-index: 1;
     top:3%;
     left:3%;
     width:20%;
@@ -35,10 +137,107 @@ body{
     opacity:0.5;
 }
 
+/* nav_menu */
+.nav{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    background: rgba(99, 99, 99,.95);
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+}
+
+.nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.nav_item li{
+    height: calc(100vh/5);
+    line-height: 187.39px;
+    list-style-type: none;
+    font-size: 3em;
+    text-align: center;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* hamburger_line */
+#target {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    cursor: pointer;
+    display: block;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+}
+
+.target_inner{
+    width: 40px;
+    height: 30px;
+    position: relative;
+}
+
+.target_inner_line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #636363;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.target_inner_1 {
+    top: 0;
+}
+
+.target_inner_2 {
+    top: 13px;
+}
+
+.target_inner_3 {
+    top: 26px;
+}
+
+/* 動き */
+.fadein{
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.linea,.lineb,.linec{
+    background: #ffffff;
+}
+
+.linea {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+    top: 13px;
+}
+
+.lineb {
+    opacity: 0;
+}
+
+.linec {
+    -webkit-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+    top: 13px;
+}
+
 .main-wrap {
     width: calc(100% - 120px);
     margin: 0 auto;
-   
 }
 
 ul {
@@ -196,7 +395,7 @@ h2 {
 
 .item_name {
     text-align: center;
-    font-size:2em;
+    font-size:2.5em;
     font-family: 'Noto Serif';
 } 
 
@@ -325,7 +524,16 @@ h2 {
     opacity: 0;
   }
 
-  a {
+a {
       text-decoration: none;
       color:#000;
   }
+
+/* iframePC版フッター表示 */
+#pc_footerframe {
+display:block;
+}
+/* iframesmp版フッター表示 */
+#smp_footerframe {
+    display:none;
+}
