@@ -1,26 +1,101 @@
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1024px){
+    .main-wrap {
+        width: calc(100% - 50px);
+        margin: 0 auto;
+    }
+
     .html {
         font-size:;
         overflow:hidden;
     }
     
     .fathersheader  {
-        width: 100%;
-        padding-top: calc(350 / 550 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
-        background-image: url(./img/fathersdaytopsmp.png);
+        width: auto;
+        padding-top: calc(1500 / 1078 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
+        background-image: url(./img/fathersdaylp_smp_resize650.png);
         background-repeat: no-repeat;
-        background-size: cover
+        background-size: cover;
         height:0;
+        position:reative;
+    }
+    /* ハンバーガーメニュー */
+
+    nav.globalMenuSp {
+        width:100%;
+        z-index:100;
+       
     }
 
-    .fathersbanner_s {
-        margin:0 auto;
+    .navToggle {
+        z-index:500;
+        width: 60px;
+        height: 90px;
     }
 
-    .fathersbanner_s img {
-        margin:0 auto; 
-    }
+    .navToggle span {
+        display: block;
+        position: absolute;    
+        width: 40px;
+        border-bottom: solid 5px #fff;
+        -webkit-transition: .35s ease-in-out;
+        -moz-transition: .35s ease-in-out;
+        transition: .35s ease-in-out;
+        left: 10px;
+      }
+      
+      .navToggle span:nth-child(1) {
+        top: 18px;
+      }
+      
+      .navToggle span:nth-child(2) {
+        top: 36px;
+      }
+      
+      .navToggle span:nth-child(3) {
+        top: 54px;
+      }
+      
+      .navToggle span:nth-child(4) {
+        border: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        top: 65px;
+      }
+      .navToggle.active span:nth-child(1) {
+        top: 36px;
+        left: 10px;
+        -webkit-transform: rotate(-35deg);
+        -moz-transform: rotate(-35deg);
+        transform: rotate(-35deg);
+      }
+      
+      .navToggle.active span:nth-child(2),
+      .navToggle.active span:nth-child(3) {
+        top: 36px;
+        -webkit-transform: rotate(35deg);
+        -moz-transform: rotate(35deg);
+        transform: rotate(35deg);
+      }
 
+      nav.globalMenuSp ul li {
+        font-size: 2.5em;
+        list-style-type: none;
+        width: 100%;
+        padding:5% 0;
+        border: 1px dotted #000;
+      }
+      /* ハンバーガーメニューここまで */
+    
+
+    .logo {
+        position:absolute;
+        left:0;
+        z-index: 10;
+        top:3%;
+        left:3%;
+        width:50%;
+    }
 
     .top_categories {
         display:flex;
@@ -59,163 +134,64 @@
         font-size: .5rem;
     }
 
+    .line:before,.line:after {
+        content: "";
+        flex-grow: 1;
+        height: 2px;
+        background: #444;
+        display: block;
+        position:relative;
+        top:15px;
+    }
+
     .main-brand,.brandname {
         display: flex;
         flex-direction: column;
         width:100%;
     }
 
+    .brandname {
+        position:relative;
+    }
+
     .main-brand:not(:first-child) {
         margin-top:40%;
     }
 
-    #loisvutton {
-        font-size:1.5rem;
-    }
-
-    .ractangle {
-        width:50%;
-    }
-
     .brandpic {
-        width:80%;
         margin-top: 100px;
+        width:100%;
     }
 
     .description {
-        margin-top:10%;
+        margin-top:8%;
         margin-left:0%;
     }
 
     #dis {
+        text-align: left;
+        font-size: 3em;
         margin-top:5%;
     }
 
-    .category_letter {
-        margin-top:30%;
+    #dis_s {
+        text-align: left;
+        font-size: 2em;
+        margin-top:5%;
+        line-height: 2em;
     }
 
-    .category {
-        margin-bottom:20%;
-    }
-
-    ul.three_item {
-        border: 1px solid black;
-        display:flex;
-        flex-direction: column;
-        margin: 100px 30px 30px 30px;
-    }
-
-    .items:not(:last-child) {
-        border-bottom: 1px solid black;
-    }
-
-    .three_item img {
-        display:none;
-    }
-
-    .item_name {
-        margin:8% 0;
-    }
-
-    .wrapping {
-        font-size:3em;
-    }
-
-    .wrapping {
-        margin-bottom:30%;
-    }
-
-    .giftdis {
-        font-size:1.5em;
-    }
-
-    .details {
-        padding:10px 50px;
-        font-size:1.5em;
-    }
-
+#loisvuitton{
+    font-size:4.5em;
 }
 
-@media screen and (max-width: 1024px){
-    .html {
-        font-size:;
-        overflow:hidden;
-    }
-    
-    .fathersheader  {
-        width: 100%;
-        padding-top: calc(1500 / 883 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
-        background-image: url(./img/fathersdaytopsmp.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height:0;
-    }
+#gucci {
+    font-size:12.5em;
+}
 
-    .top_categories {
-        display:flex;
-        flex-direction: column;
-        height: auto;
-        background: #fff;
-        position: relative;
-        z-index: 10;
-        overflow: hidden;
-        margin: 100px 30px 30px 30px;
-        border:1px solid #000;
-    
-    }
-
-    .pic {
-        display:none;
-    }
-
-    .box:not(:last-child) {
-        border-bottom:1px solid #000;
-    }
-
-    .text {
-        text-align: center;
-        width:auto;
-        padding:10px;
-    }
-
-    h1{
-        font-size:2rem;
-    }
-
-    .line-up {
-        margin: 30% 0;
-        text-align: center;
-        font-size: .5rem;
-    }
-
-    .main-brand,.brandname {
-        display: flex;
-        flex-direction: column;
-        width:100%;
-    }
-
-    .main-brand:not(:first-child) {
-        margin-top:40%;
-    }
-
-    #loisvutton {
-        font-size:.5rem;
-    }
-
-    .ractangle {
-        width:50%;
-    }
-
-    .brandpic {
-        width:80%;
-        margin-top: 100px;
-    }
-
-    .description {
-        margin-top:10%;
-        margin-left:0%;
-    }
+#helmes {
+    font-size:10em;
+}
 
     .category_letter {
         margin-top:30%;
@@ -230,18 +206,34 @@
         display:flex;
         flex-direction: column;
         margin: 100px 30px 30px 30px;
+        
     }
+
+    .items {
+        margin: 0;
+        padding:5%;
+    }
+
+    .items:last-child {
+        display:block;
+    }
+
 
     .items:not(:last-child) {
         border-bottom: 1px solid black;
     }
+
+    .all {
+        display:none;
+    }
+
 
     .three_item img {
         display:none;
     }
 
     .item_name {
-        margin:8% 0;
+        /* margin:8% 0; */
     }
 
     .wrapping {
@@ -252,19 +244,29 @@
         margin-bottom:20%;
     }
 
-    .giftdis {
-        font-size:1.5em;
+    .giftpic img {
+        border-radius: 30px;
+        width:350px;
+        height:300px;
+        
     }
+
+    .giftdis {
+        font-size:1.3em;
+    }
+
 
     .details {
-        padding:10px 50px;
-        font-size:1.5em;
+        padding: 10px 80px;
+        font-size: 20px;
     }
-
-    .description {
-        margin-top:10%;
-        margin-left:10%;
-    
+/* iframePC版フッター非表示 */
+    #pc_footerframe {
+        display:none;
     }
-    
+/* iframesmp版フッター表示 */
+    #smp_footerframe {
+        display:block;
+    }
+  
 }

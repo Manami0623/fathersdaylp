@@ -1,3 +1,15 @@
+$(function() {
+    $('.navToggle').click(function() {
+        $(this).toggleClass('active');
+ 
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
+});
+
 $(function(){
     $(window).scroll(function (){
         $('.top_categories').each(function(){
@@ -55,7 +67,21 @@ $(function(){
 });
 
 $(function(){
-    $('.description p').addClass('move');
+    $(window).scroll(function (){
+        $('.three_item').each(function(){
+            var targetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > targetElement - windowHeight + 200){
+                $(this).css('opacity','1');
+                $(this).css('transform','translateY(0)');
+            }
+        });
+    });
+});
+
+$(function(){
+    $('.description').addClass('move');
     $(window).scroll(function(){
       $(".description").each(function(){
         var imgPos = $(this).offset().top;    
@@ -70,3 +96,4 @@ $(function(){
     });
   });
   
+
